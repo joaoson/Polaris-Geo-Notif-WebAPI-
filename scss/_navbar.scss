@@ -1,0 +1,27 @@
+.navbar{
+
+    padding-top: 1rem;
+
+    .imagem{
+        width: 20% !important;
+    } 
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .navtext{
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+        color: black;
+    }
+
+}
+
+body,html{
+    font-family: "Montserrat", sans-serif;
+    box-sizing: content-box;
+}
+

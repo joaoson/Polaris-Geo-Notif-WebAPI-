@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Polaris</title>
+</head>
+<body>
+
+    <div class="container">
+        <header class="navbar">
+            <img class="imagem img-fluid" src="./assets/img/polariscol-transformed.png" alt="">
+            <div id="navtext" class="navtext">
+                <span><a href="">Inicio</a></span>
+                <span><a href="#loca">Localização</a></span>
+                <span><a href="#serv">Serviços</a></span>
+                <span><a href="#segm">Segmentos</a></span>
+            </div>
+        </header>
+        <main>
+            <section class="mainsection">
+                <img src="./assets/img/Group.png" alt="">
+                <div class="textprinc">    
+                    <h2>Transformacao Digital</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur eveniet sint ullam soluta aspernatur rerum, pariatur eligendi temporibus laboriosam quos fugiat error impedit ducimus repellendus nemo cum suscipit explicabo tempora!</p>
+                    <button onclick="getNotification()" >Ativar Notificacoes</button>
+                </div>
+            </section>
+            <section id="loca" class="geo">
+                <h2>Localização</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni voluptate illum laboriosam recusandae. Excepturi deleniti fuga consequuntur fugiat illum? Tempora ipsa tenetur iusto provident, odio assumenda atque in ea maiores!</p>
+                <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=avenida%20paulista%20Sao%20paulo+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" name="map"></iframe>
+            </section>
+            <section id="serv" class="services">
+                <h2>Serviços</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni voluptate illum laboriosam recusandae. Excepturi deleniti fuga consequuntur fugiat illum? Tempora ipsa tenetur iusto provident, odio assumenda atque in ea maiores!</p>
+                <div id="servcards" class="cards">
+                    <div id="servcard" class="card servcard">
+                        <span class="number">01</span>
+                        <h3>UX Design</h3>
+                            <ul>
+                                <li>SaaS Platform Development</li>
+                                <li>Full Stack Development</li>
+                                <li>Web Development </li>
+                            </ul>
+                            <p> 
+                                We create innovative solutions to solve customer problems   and giving you more control over product.
+                            </p>
+                    </div>
+                    <div id="servcard" class="card servcard">
+                        <span class="number">02</span>
+                        <h3>Frontend</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    </div>
+                    <div id="servcard" class="card servcard">
+                        <span class="number">03</span>
+                        <h3>Test</h3>
+                        <p>Designing success through creative web design for your business to be the best.
+
+                            Improving customer engagement with enhanced user experience.</p>
+                    </div>
+                    <div id="servcard" class="card servcard">
+                        <span class="number">04</span>
+                        <h3>Delivery</h3>
+                        <p>Develop your MVP with our experts who help create a solution that solves customer problems.
+
+                            We fill in the technology gaps for you.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="segm" class="segments">
+                <h2>Segmentos</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni voluptate illum laboriosam recusandae. Excepturi deleniti fuga consequuntur fugiat illum? Tempora ipsa tenetur iusto provident, odio assumenda atque in ea maiores!</p>
+                <div class="cards">
+                    <div id="segmcard" class="card">
+                        <img src="./assets/img/Group (1).png" alt="">
+                        <h3>E-commerce</h3>
+                        <p>We assist physical and digital retailers, wholesalers, and suppliers to automate commercial operations and business workflows. With e-commerce solutions, ERPS and improvised customer services.</p>
+                    </div>
+                    <div id="segmcard" class="card">
+                        <img src="./assets/img/Group (2).png" id="finance" alt="">
+                        <h3>Fintechs</h3>
+                        <p>We assist physical and digital retailers, wholesalers, and suppliers to automate commercial operations and business workflows. With e-commerce solutions, ERPS and improvised customer services</p>
+                    </div>
+                    <div id="segmcard" class="card">
+                        <img src="./assets/img/Group (3).png" id="car" alt="">
+                        <h3>Mobilidade</h3>
+                        <p>We assist physical and digital retailers, wholesalers, and suppliers to automate commercial operations and business workflows. With e-commerce solutions, ERPS and improvised customer services</p>
+                    </div>
+                    <div id="segmcard" class="card">
+                        <img src="./assets/img/Group (4).png" id="cinema" alt="">
+                        <h3>Entretenimento</h3>
+                        <p>We assist physical and digital retailers, wholesalers, and suppliers to automate commercial operations and business workflows. With e-commerce solutions, ERPS and improvised customer services</p>
+                    </div>
+                    <div id="segmcard" class="card">
+                        <img src="./assets/img/Group (5).png" id="law" alt="">
+                        <h3>Direito</h3>
+                        <p>We assist physical and digital retailers, wholesalers, and suppliers to automate commercial operations and business workflows. With e-commerce solutions, ERPS and improvised customer services</p>
+                    </div>
+                    <div id="segmcard" class="card">
+                        <img src="./assets/img/Group (6).png" id="hotel" alt="">
+                        <h3>Hospitalidade</h3>
+                        <p>We assist physical and digital retailers, wholesalers, and suppliers to automate commercial operations and business workflows. With e-commerce solutions, ERPS and improvised customer services</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer class="footer">
+        <img class="imagem img-fluid" src="./assets/img/polariscol-transformed.png" alt="">
+        <p>© Copyright 2022 | All Rights Reserved</p>
+    </footer>
+
+    <script src="./index.js"></script>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

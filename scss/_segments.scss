@@ -1,0 +1,134 @@
+.segments{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    text-align: center;
+    margin-top: 4rem;
+
+    p{
+        width: 80%;
+        padding: 1rem 0;
+    }
+
+    h2{
+        font-weight: 700;
+    }
+
+    .cards{
+        display: flex;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+
+        .card{
+            text-align: left;
+            width: 33%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: left;
+            border: none;
+            
+            img{
+                height: 40px;
+                width: 46px;
+                box-sizing: content-box;
+                border-right: 2px black solid;
+                border-bottom: 2px black solid;
+                padding: 1rem 0.3rem 1rem 0;
+            }
+
+            h3{
+                font-weight: 600;
+                padding-left: 15%;
+            }
+
+            p{
+                padding-left: 15%;
+            }
+
+            #finance{
+                height: 46px;
+                width: 42px;
+            }
+
+            #car{
+                height: 25px;
+            }
+
+            #cinema{
+                width: 42px;
+            }
+
+            #hotel{
+                height: 30px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .card{
+        img{
+            display: none;
+        }
+    }
+
+    #segmcard{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 595px) {
+
+    #navtext{
+        display: none;
+    }
+
+    .navbar{
+        justify-content: center;
+
+    }
+    #segmcard{
+        width: 100%;
+    }
+
+    #servcards{
+        flex-wrap: wrap;
+
+        #servcard{
+            width: 80%;
+            min-height: 0;
+            margin-bottom: 2rem;
+        
+            h3{
+                margin-top: 0;
+                text-align: center;
+                padding-top: 1rem;
+            }
+        }
+    }
+
+    .geo iframe{
+        width: 100%;
+        height: 50vh;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .mainsection img{
+        display: none;
+    }
+
+    .navbar .imagem{
+        width: 60% !important;
+    }
+
+    .mainsection{
+        padding: 2rem;
+    }
+}

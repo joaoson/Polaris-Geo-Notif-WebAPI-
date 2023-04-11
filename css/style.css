@@ -1,0 +1,269 @@
+.navbar {
+  padding-top: 1rem;
+}
+.navbar .imagem {
+  width: 20% !important;
+}
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+.navbar .navtext {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  color: black;
+}
+
+body, html {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: content-box;
+}
+
+.mainsection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+}
+.mainsection img {
+  width: 50%;
+}
+.mainsection h2 {
+  font-weight: 700;
+}
+.mainsection button {
+  background: none;
+  padding: 0.7rem;
+  font-weight: bold;
+  color: #0074FF;
+  font-weight: 600;
+}
+
+.geo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: auto;
+  align-items: center;
+  text-align: center;
+}
+.geo h2 {
+  font-weight: 700;
+}
+.geo p {
+  width: 80%;
+  padding: 1rem 0;
+}
+.geo iframe {
+  height: 400px;
+  width: 520px;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin-top: 4rem;
+}
+.services p {
+  padding: 1rem 0;
+  width: 80%;
+}
+.services h2 {
+  font-weight: 700;
+}
+.services .cards {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.services .cards .card {
+  width: 22.5%;
+  text-align: left;
+  color: white;
+  background-color: #0074FF;
+  min-height: 40vh;
+  height: auto;
+  border-radius: 0px;
+  flex-direction: column;
+  display: flex;
+}
+.services .cards .card span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 144px;
+  font-weight: 700;
+  line-height: 176px;
+  letter-spacing: 0em;
+  z-index: 1;
+  position: absolute;
+  color: #1A1A1A;
+  opacity: 10%;
+  -webkit-background-clip: text;
+}
+.services .cards .card h3 {
+  margin-top: 50%;
+  padding-left: 10%;
+  z-index: 2;
+  position: relative;
+  font-weight: 700;
+}
+.services .cards .card p {
+  padding: 5%;
+  z-index: 2;
+}
+
+@media only screen and (max-width: 768px) {
+  .number {
+    display: none;
+  }
+  #servcard {
+    min-height: 90vh;
+  }
+  #servcard h3 {
+    padding: 0%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  #servcard {
+    min-height: 60vh;
+  }
+}
+.segments {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  text-align: center;
+  margin-top: 4rem;
+}
+.segments p {
+  width: 80%;
+  padding: 1rem 0;
+}
+.segments h2 {
+  font-weight: 700;
+}
+.segments .cards {
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+}
+.segments .cards .card {
+  text-align: left;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  border: none;
+}
+.segments .cards .card img {
+  height: 40px;
+  width: 46px;
+  box-sizing: content-box;
+  border-right: 2px black solid;
+  border-bottom: 2px black solid;
+  padding: 1rem 0.3rem 1rem 0;
+}
+.segments .cards .card h3 {
+  font-weight: 600;
+  padding-left: 15%;
+}
+.segments .cards .card p {
+  padding-left: 15%;
+}
+.segments .cards .card #finance {
+  height: 46px;
+  width: 42px;
+}
+.segments .cards .card #car {
+  height: 25px;
+}
+.segments .cards .card #cinema {
+  width: 42px;
+}
+.segments .cards .card #hotel {
+  height: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .card img {
+    display: none;
+  }
+  #segmcard {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 595px) {
+  #navtext {
+    display: none;
+  }
+  .navbar {
+    justify-content: center;
+  }
+  #segmcard {
+    width: 100%;
+  }
+  #servcards {
+    flex-wrap: wrap;
+  }
+  #servcards #servcard {
+    width: 80%;
+    min-height: 0;
+    margin-bottom: 2rem;
+  }
+  #servcards #servcard h3 {
+    margin-top: 0;
+    text-align: center;
+    padding-top: 1rem;
+  }
+  .geo iframe {
+    width: 100%;
+    height: 50vh;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .mainsection img {
+    display: none;
+  }
+  .navbar .imagem {
+    width: 60% !important;
+  }
+  .mainsection {
+    padding: 2rem;
+  }
+}
+footer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(26, 26, 26);
+  color: white;
+}
+footer img {
+  width: 15% !important;
+}
+
+@media only screen and (max-width: 500px) {
+  footer img {
+    display: none;
+  }
+  footer {
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

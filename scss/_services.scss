@@ -1,0 +1,82 @@
+.services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-top: 4rem;
+
+    p{
+        padding: 1rem 0;
+        width: 80%;
+    }
+
+    h2{
+        font-weight: 700;
+    }
+
+    .cards{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .card{
+            width: 22.5%;
+            text-align: left;
+            color: white;
+            background-color: #0074FF;
+            min-height: 40vh;
+            height: auto;
+            border-radius: 0px;
+            flex-direction: column;
+            display: flex;
+
+            span{
+                font-family:'Montserrat', sans-serif;
+                font-size: 144px;
+                font-weight: 700;
+                line-height: 176px;
+                letter-spacing: 0em;
+                z-index: 1;
+                position: absolute;
+                color: #1A1A1A;
+                opacity: 10%;
+                -webkit-background-clip: text;
+            }
+
+            h3{
+                margin-top: 50%;
+                padding-left: 10%;
+                z-index: 2;
+                position: relative;
+                font-weight: 700;
+            }
+            p{
+                padding: 5%;
+                z-index: 2;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .number{
+        display: none;
+    }
+
+    #servcard{
+        min-height: 90vh;
+
+        h3{
+            padding: 0%;
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #servcard{
+        min-height: 60vh;      
+    }
+}
